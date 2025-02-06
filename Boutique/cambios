@@ -1,0 +1,134 @@
+/*tabla*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+td img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td a {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+td a:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+/*tabla*/
+/*titulo*/
+/* Contenedor flexible para título y botones */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Para evitar desbordamientos en pantallas pequeñas */
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Estilos del título */
+.table-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Contenedor de los botones */
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilos generales de botones */
+.btn-registro, .btn-pdf {
+  background-color: #2BD47D;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start; /* Mantiene alineado a la izquierda */
+  }
+
+  .btn-container {
+      width: 110%;
+      justify-content: flex-start; /* Mantiene alineado a la izquierda */
+      flex-wrap: wrap;
+  }
+
+  .btn-registro, .btn-pdf {
+      width: auto; /* Evita que ocupen todo el ancho */
+  }
+}
+/*titulo*/
+
+            <div class="header-container">
+                <h2 class="table-title">Listado de Productos</h2>
+
+                <div class="btn-container">
+                    <a href="./nuevo.php" class="btn-registro">
+                        <i class="bi bi-plus"></i> Registrar
+                    </a>
+                    <a href="./producto_pdf.php" class="btn-pdf" target="_blank">
+                        <i class="bi bi-file-earmark-pdf"></i> Reporte PDF
+                    </a>
+                </div>
+            </div>
