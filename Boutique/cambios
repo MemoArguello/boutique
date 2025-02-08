@@ -1,62 +1,3 @@
-/*tabla*/
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-thead {
-    background-color: #007BFF;
-    color: white;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-
-
-td img {
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-td a {
-    background-color: #28a745;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-td a:hover {
-    background-color: #218838;
-}
-
-@media (max-width: 768px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-}
-/*tabla*/
 /*titulo*/
 /* Contenedor flexible para título y botones */
 .header-container {
@@ -69,6 +10,7 @@ td a:hover {
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 10px;
+  height: 86px;
 }
 
 /* Estilos del título */
@@ -106,6 +48,7 @@ td a:hover {
   .header-container {
       flex-direction: column;
       align-items: flex-start; /* Mantiene alineado a la izquierda */
+      height: 90px;
   }
 
   .btn-container {
@@ -114,9 +57,15 @@ td a:hover {
       flex-wrap: wrap;
   }
 
-  .btn-registro, .btn-pdf {
+  .btn-registro{
       width: auto; /* Evita que ocupen todo el ancho */
+      right: 45px;
+      margin-top: 20px;
   }
+  .btn-pdf {
+    width: auto; /* Evita que ocupen todo el ancho */
+    right: 182px;
+    margin-top: 20px;}
 }
 /*titulo*/
 
