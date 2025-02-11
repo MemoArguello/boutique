@@ -9,7 +9,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #0A2558;
+  background: #c96b00;
   transition: all 0.5s ease;
 }
 .sidebar.active{
@@ -49,10 +49,10 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: #ffbb00;
 }
 .sidebar .nav-links li a:hover{
-  background: #081D45;
+  background: #ffbb00;
 }
 .sidebar .nav-links li i{
   min-width: 60px;
@@ -73,7 +73,7 @@
 }
 .home-section{
   position: relative;
-  background: #f5f5f5;
+  background: #ff99006b;
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
@@ -177,13 +177,16 @@ nav .profile-details i{
 }
 .home-content .overview-boxes{
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
   padding: 0 20px;
   margin-bottom: 26px;
+  flex-direction: row;
 }
 .overview-boxes .box{
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,14 +239,111 @@ nav .profile-details i{
   border-radius: 12px;
   margin: -15px 0 0 6px;
 }
+.home-content .box .bxs-user{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #cce5ff;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+.home-content .box .bx-package{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #ceffcc;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
+.home-content .box .bx-category{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #ceffcc;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
+.home-content .box .bxs-truck{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #ceffcc;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
+.home-content .box .bxs-user-detail{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #ceffcc;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
+.home-content .box .bx-dollar{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #ceffcc;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
 .home-content .box .cart.two{
    color: #2BD47D;
    background: #C0F2D8;
  }
-.home-content .box .cart.three{
+.home-content .box .bxs-shopping-bags{
    color: #ffc233;
-   background: #ffe8b3;
+   background: #ffe8b3; 
+  display: inline-block;
+   font-size: 32px;
+   height: 50px;
+   width: 50px;
+   line-height: 50px;
+   text-align: center;
+   border-radius: 12px;
+   margin: -15px 0 0 6px;
  }
+ .home-content .box .bx-cart{
+  color: #74ff33;
+  background: #049729; 
+ display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
 .home-content .box .cart.four{
    color: #e05260;
    background: #f7d4d7;
@@ -255,7 +355,6 @@ nav .profile-details i{
 .home-content .sales-boxes{
   padding: 0 20px;
   position: relative;
-
 }
 /* left box */
 .home-content .sales-boxes .recent-sales{
@@ -282,7 +381,7 @@ nav .profile-details i{
 }
 
 .btn-registro{
-background-color: #2BD47D;
+background-color: #0099ff;
 color: white;
 padding: 10px 20px;
 text-decoration: none;
@@ -292,6 +391,19 @@ position: absolute;
 right: 80px;
 top: 20px;
 }
+.btn-pdf{
+  background-color: #ffbb00;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  right: 220px;
+  top: 20px;
+  }
+
+  
 
 .home-content .sales-boxes .sales-details{
   display: flex;
@@ -471,10 +583,9 @@ top: 20px;
 
 .container{
     position: relative;
-    width: 90%;
+    width: 100%;
     border-radius: 6px;
     padding: 30px;
-    margin: 0 15px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
@@ -607,6 +718,45 @@ form .buttons button , .backBtn{
     margin-right: 14px;
     text-decoration: none;
 }
+
+.container button, .backBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #4070f4;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.container  .btnText{
+  font-size: 14px;
+  font-weight: 400;
+}
+button:hover{
+  background-color: #265df2;
+}
+button i,
+.backBtn i{
+  margin: 0 6px;
+}
+.backBtn i{
+  transform: rotate(180deg);
+}
+.buttons{
+  display: flex;
+  align-items: center;
+}
+.buttons button , .backBtn{
+  margin-right: 14px;
+  text-decoration: none;
+}
 @media (max-width: 750px) {
     .container form{
         overflow-y: scroll;
@@ -651,6 +801,24 @@ form .buttons button , .backBtn{
     cursor: pointer;
   }
 
+  
+  .submitBotonCerrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    text-decoration: none;
+    max-width: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #283ebb;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
   .submitBotonEliminar{
     display: flex;
     align-items: center;
@@ -674,5 +842,134 @@ form .buttons button , .backBtn{
   }
 
   .submitBotonEliminar:hover{
-    background-color: #910202;
+    background-color: #ee0000;
   }
+
+  /*tabla*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #ff8800;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+td img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td a {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+td a:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+/*tabla*/
+/*titulo*/
+/* Contenedor flexible para título y botones */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Para evitar desbordamientos en pantallas pequeñas */
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Estilos del título */
+.table-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contenedor de los botones */
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilos generales de botones */
+.btn-registro, .btn-pdf {
+  background-color: #2BD47D;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start; /* Mantiene alineado a la izquierda */
+      height: 180px;
+  }
+
+  .btn-container {
+      width: 110%;
+      justify-content: flex-start; /* Mantiene alineado a la izquierda */
+      flex-wrap: wrap;
+  }
+
+  .btn-pdf {
+      width: auto; /* Evita que ocupen todo el ancho */
+      margin-top: 90px;
+      right: 158px;
+  }
+  .btn-registro{
+    width: auto; /* Evita que ocupen todo el ancho */
+    margin-top: 90px;
+    right: 26px;
+}
+}
